@@ -7,18 +7,38 @@
     <style>
         .container {
             display: grid; /*6x6*/
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 3rem);
             grid-template-areas: 
             "header header header header header ads"
-            "nav article article article article article "
-            "nav article article article article article "
-            "nav article article article article article "
-            "nav article article article article article "
-            "nav footer footer footer footer footer ";
-
+            "nav article article article article article"
+            "nav article article article article article"
+            "nav article article article article article"
+            "nav article article article article article"
+            "nav footer footer footer footer footer";
+            gap: 10px;
+        }
+        .header {
+            grid-area: header;
+        }
+        .ads {
+            grid-area: ads;
+        }
+        .nav {
+            grid-area: nav;
+        }
+        .article {
+            grid-area: article;
+        }
+        .footer {
+            grid-area: footer;
         }
         .item {
             background-color: darkolivegreen;
             color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
