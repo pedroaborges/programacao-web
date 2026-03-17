@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    gap: 5px;
+    background-color: bisque;
+    justify-content: center;
+
+}
+
+.item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: yellow;
+}
+
+.item2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: green;
+}
